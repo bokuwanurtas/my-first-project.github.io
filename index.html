@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио блогера</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Моё портфолио</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Блог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Success Message (Hidden by Default) -->
+    <div id="successMessage" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+        Сообщение успешно отправлено! Спасибо за ваш отзыв.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>
+    </div>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1>Добро пожаловать в моё портфолио</h1>
+            <p>Откройте для себя моё творческое путешествие как блогера и создателя контента</p>
+            <a href="#portfolio" class="btn btn-primary btn-lg cta-button">Посмотреть мои работы</a>
+        </div>
+    </section>
+
+    <!-- Секция "Обо мне" -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Обо мне</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/about_photo.jpg" class="img-fluid rounded" alt="Блогер">
+                </div>
+                <div class="col-md-6">
+                    <p>Привет, я Арайлым, увлечённый блогер и создатель контента. Я специализируюсь на создании интересного контента о стиле жизни, путешествиях и технологиях. Моя миссия — вдохновлять и информировать аудиторию через творческое повествование.</p>
+                    <p>Имея многолетний опыт, я сотрудничал с брендами и создал сообщество читателей, которые ценят мой аутентичный стиль.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Портфолио" -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Портфолио</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card portfolio-card">
+                        <img src="images/travel_card.jpg" class="card-img-top" alt="Блог о путешествиях">
+                        <div class="card-body">
+                            <h5 class="card-title">Блог о путешествиях</h5>
+                            <p class="card-text">Серия статей о скрытых жемчужинах по всему миру.</p>
+                            <a href="travel_blog.html" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card portfolio-card">
+                        <img src="images/tech_card.jpg" class="card-img-top" alt="Обзоры технологий">
+                        <div class="card-body">
+                            <h5 class="card-title">Обзоры технологий</h5>
+                            <p class="card-text">Глубокие обзоры последних гаджетов и технологических трендов.</p>
+                            <a href="tech_reviews.html" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card portfolio-card">
+                        <img src="images/lifestyle_card.jpg" class="card-img-top" alt="Влоги о стиле жизни">
+                        <div class="card-body">
+                            <h5 class="card-title">Влоги о стиле жизни</h5>
+                            <p class="card-text">Видео-контент, демонстрирующий повседневную жизнь и советы.</p>
+                            <a href="lifestyle_vlogs.html" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Блог" -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Блог</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card blog-card">
+                        <img src="images/travel_post.jpg" class="card-img-top-port" alt="Топ-10 направлений">
+                        <div class="card-body">
+                            <h5 class="card-title">Топ-10 направлений для путешествий в 2025 году</h5>
+                            <p class="card-text">Откройте для себя лучшие места для посещения в этом году.</p>
+                            <a href="travel_destinations.html" class="btn btn-outline-primary">Читать пост</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card blog-card">
+                        <img src="images/blogging_post.jpg" class="card-img-top-port" alt="Как начать блог">
+                        <div class="card-body">
+                            <h5 class="card-title">Как начать вести блог</h5>
+                            <p class="card-text">Руководство для новичков по созданию собственного блога.</p>
+                            <a href="start_blog.html" class="btn btn-outline-primary">Читать пост</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Контакты" -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Связаться со мной</h2>
+            <form action="submit_contact.php" method="POST" class="w-50 mx-auto">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="name" name="name" maxlength="100" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Нижний колонтитул -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>© 2025 Арайлым. Все права защищены.</p>
+            <div>
+                <a href="https://www.instagram.com/arai_amzee/" class="text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
